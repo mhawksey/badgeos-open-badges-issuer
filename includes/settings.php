@@ -68,7 +68,7 @@ class BadgeOS_OpenBadgesIssuer_Settings {
 	public function badgeos_obi_issuer_settings_section_override()
 	{
 		// Think of this as help text for the section.
-		echo __('These are optional settings to set the <a href="https://github.com/mozilla/openbadges-specification/blob/master/Assertion/latest.md#issuerorganization">IssuerOrganiztion</a>. 
+		echo __('These are optional settings to set the <a href="https://github.com/mozilla/openbadges-specification/blob/master/Assertion/latest.md#issuerorganization">IssuerOrganization</a>. 
 		By default the add-on will use the blog name and url.', 'badgeos_obi_issuer');
 	}
 
