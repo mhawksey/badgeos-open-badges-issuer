@@ -135,7 +135,7 @@ class JSON_API_Badge_Controller {
 		// Loop Achievements
 		$achievement_posts = new WP_Query( $args );
 		$query_count += $achievement_posts->found_posts;
-		$base_url = site_url().'/'.get_option('json_api_base', 'api').'/badge/assertion/?uid=';
+		$base_url = home_url().'/'.get_option('json_api_base', 'api').'/badge/assertion/?uid=';
 		$pushed_badges = ( $pushed_items = get_user_meta( absint( $user_id ), '_badgeos_backpack_pushed' ) ) ? (array) $pushed_items : array();
 		while ( $achievement_posts->have_posts() ) : $achievement_posts->the_post();
 			$achievement_id = get_the_ID();
